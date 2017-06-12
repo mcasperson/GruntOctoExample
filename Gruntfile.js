@@ -32,6 +32,13 @@ module.exports = function (grunt) {
                 src: ['dist/*.txt'],
                 cwd: ""
             },
+            prodFolderZip3: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['dist/**/*.txt']
+            },
             prodFolderGZip: {
                 options: {
                     dst: './bin',
