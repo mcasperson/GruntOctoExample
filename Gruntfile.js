@@ -30,6 +30,30 @@ module.exports = function (grunt) {
                     type: 'targz'
                 },
                 src: ['dist/*.txt']
+            },
+            prodNoFolderZip2: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*.txt'],
+                cwd: './dist'
+            },
+            prodNoFolderZip3: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*.txt'],
+                cwd: './dist/'
+            },
+            prodNoFolderZip4: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*.txt'],
+                cwd: './dist/../dist'
             }
         }
     });
