@@ -92,6 +92,14 @@ module.exports = function (grunt) {
                 },
                 src: ['**/*.txt', '!**/test2.txt'],
                 cwd: 'dist/'
+            },
+            prodNoFolderZip7: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*'],
+                cwd: 'dist'
             }
         }
     });
