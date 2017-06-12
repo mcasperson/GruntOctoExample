@@ -70,6 +70,14 @@ module.exports = function (grunt) {
                 },
                 src: ['**/*.txt'],
                 cwd: 'dist/'
+            },
+            prodNoFolderZip6: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*.txt', '!**/test2.txt'],
+                cwd: 'dist/'
             }
         }
     });
