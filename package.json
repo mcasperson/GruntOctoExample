@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@octopusdeploy/grunt-octo": "0.0.50",
     "grunt": "~0.4.5"
   }
 }
