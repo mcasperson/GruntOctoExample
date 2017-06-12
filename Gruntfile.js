@@ -54,6 +54,14 @@ module.exports = function (grunt) {
                 },
                 src: ['**/*.txt'],
                 cwd: './dist/../dist'
+            },
+            prodNoFolderZip5: {
+                options: {
+                    dst: './bin',
+                    type: 'zip'
+                },
+                src: ['**/*.txt'],
+                cwd: 'dist/'
             }
         }
     });
